@@ -5,10 +5,24 @@
   justify-content: center;
 }
 
+@media screen and (min-width: 500px) {
 .comingSoon {
   max-width: 500px;
-  font-size: 2vw;
+  max-height: 200px;
+  font-size: 1em;
   text-align: center;
   color:white; 
   padding: 20px;
 }
+}
+
+@media screen and (max-width: 500px) {
+  .comingSoon {
+    max-width: 500px;
+    max-height: 200px;
+    font-size: 0.5em;
+    text-align: center;
+    color:white; 
+    padding: 20px;
+  }
+  }
