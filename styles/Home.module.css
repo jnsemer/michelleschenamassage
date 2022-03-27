@@ -1,5 +1,5 @@
 .container {
-  padding-top: 20%;
+  background-color: #C42D2D;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -13,7 +13,9 @@
   text-align: center;
   color:white; 
   padding: 20px;
+  background-color: #C42D2D;
 }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -24,5 +26,6 @@
     text-align: center;
     color:white; 
     padding: 20px;
+    background-color: #C42D2D;
   }
   }
