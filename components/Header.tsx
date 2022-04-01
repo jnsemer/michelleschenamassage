@@ -32,7 +32,7 @@ export const Header = () => {
         <Toolbar disableGutters>
           <Logo sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}/>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, maxWidth:50, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               onClick={handleOpenNavMenu}
