@@ -5,7 +5,7 @@ import { offerings }  from '../data/offerings';
 
 export const Treatments = () => {
   return (
-    <Grid container spacing={4} pt={4}>
+    <Grid container spacing={4} pt={4} id='treatments'>
       {offerings.map((offering, i) => (
           <Grow
           appear

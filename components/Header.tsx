@@ -10,8 +10,9 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Logo } from './Logo';
+import { Link, animateScroll as scroll } from "react-scroll";
 
-const pages = [{title:'About', component: 'aboutComponent'}, {title:'Treatments', component: 'treatmentComponent'}, {title:'Contact', component: 'contactComponent'}];
+const pages = [{title:'About', component: 'aboutComponent', id:'about'}, {title:'Treatments', component: 'treatmentComponent', id:'treatments'}, {title:'Contact', component: 'contactComponent', id:'contact'}];
 
 export const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -58,15 +59,18 @@ export const Header = () => {
               }}
             >
               {pages.map((page) => (
+                <Link to={page.id} smooth>
                 <MenuItem key={page.title} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page.title}</Typography>
                 </MenuItem>
+                </Link>
               ))}
             </Menu>
           </Box>
           <Logo sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}/>
           <Box sx={{ flexGrow: 1, justifyContent:'flex-end', display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
+              <Link to={page.id} smooth>
               <Button
                 key={page.title}
                 onClick={handleCloseNavMenu}
@@ -74,6 +78,7 @@ export const Header = () => {
               >
                 {page.title}
               </Button>
+              </Link>
             ))}
           </Box>
         </Toolbar>

@@ -46,7 +46,7 @@ export const Contact = () => {
           borderRadius:2, 
           boxShadow: 4
           }}>
-            <Box maxWidth='md' justifyContent='space-between' p={3} mt={{xs: 2, md:0}}>
+            <Box maxWidth='md' justifyContent='space-between' p={3} mt={{xs: 2, md:0}} id="contact">
               <Typography color='white' sx={{textAlign:'center'}}>
                 m.schena.massage@gmail.com
               </Typography>

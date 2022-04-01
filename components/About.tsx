@@ -32,7 +32,7 @@ const AboutBlurb = () => {
 export const About = () => {
   return (
     <Fade appear in timeout={1000} >
-      <Box justifyContent='center' display='flex' mt={5} mb={5} ml={{xs:1, md:0}}>
+      <Box justifyContent='center' display='flex' mt={5} mb={5} ml={{xs:1, md:0}} id='about'>
         <Box p={2} 
         sx={{
           display: 'flex', 
