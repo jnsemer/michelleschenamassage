@@ -59,8 +59,8 @@ export const Header = () => {
               }}
             >
               {pages.map((page) => (
-                <Link to={page.id} smooth>
-                <MenuItem key={page.title} onClick={handleCloseNavMenu}>
+                <Link to={page.id} smooth key={page.title}>
+                <MenuItem onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page.title}</Typography>
                 </MenuItem>
                 </Link>
@@ -70,9 +70,8 @@ export const Header = () => {
           <Logo sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}/>
           <Box sx={{ flexGrow: 1, justifyContent:'flex-end', display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Link to={page.id} smooth>
+              <Link to={page.id} smooth key={page.title}>
               <Button
-                key={page.title}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'primary', display: 'block' }}
               >

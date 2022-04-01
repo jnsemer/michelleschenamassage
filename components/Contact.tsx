@@ -8,8 +8,8 @@ const crossFitText = ['CrossFit 1620', '10 Cedarhill Park Drive','Cedarville, MA
 const Redpoint = () => (
   <Box display='flex' flexDirection="column" justifyContent="center">
     <LocationOnTwoToneIcon sx={{color:"#fff", marginLeft:'auto', marginRight:'auto'}} fontSize="large" />
-    {redpointText.map(text => (
-        <Typography color='white' sx={{textAlign:'center'}}>
+    {redpointText.map((text, i) => (
+        <Typography color='white' sx={{textAlign:'center'}} key={`redpoint${i}`}>
           {text}
         </Typography>
     ))}
@@ -22,8 +22,8 @@ const Redpoint = () => (
 const CrossFit = () => (
   <Box display='flex' flexDirection="column" justifyContent="center">
     <LocationOnTwoToneIcon sx={{color:"#fff", marginLeft:'auto', marginRight:'auto'}} fontSize="large" />
-    {crossFitText.map(text => (
-        <Typography color='white' sx={{textAlign:'center'}}>
+    {crossFitText.map((text,i )=> (
+        <Typography color='white' sx={{textAlign:'center'}} key={`crossfit${i}`}>
           {text}
         </Typography>
     ))}
