@@ -1,14 +1,18 @@
-import { Container, makeStyles } from '@mui/material'
-import type { NextPage } from 'next'
 import Head from 'next/head'
-import { ComingSoon } from '../components/ComingSoon'
-import styles from '../styles/Home.module.css'
+import React from 'react';
+import type { NextPage } from 'next'
+import { ThemeProvider } from '@mui/material/styles';
+import { theme } from '../components/Theme';
+import { Container, Typography } from '@mui/material';
+import { Header } from '../components/Header';
+import { About } from '../components/About';
+import { Treatments } from '../components/Treatments';
+import { Contact } from '../components/Contact'; 
 
 
 const Home: NextPage = () => {
   return (
-    <Container disableGutters maxWidth='xl' sx={{ justifyContent:'center',
-      backgroundColor:"#C42D2D", display:'flex', height:'100vh', width:'100%', margin:'auto'}}>
+    <ThemeProvider theme={theme}>
       <Head>
         <title>Michelle Schena Massage</title>
         <meta name="Michelle Schena Massage, Licensed Massage Therapist" content="Massage Therapist" />
@@ -17,8 +21,15 @@ const Home: NextPage = () => {
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
       </Head>
-      <ComingSoon />
+    <Header />
+    <Container maxWidth='xl' sx={{mt:3}}>
+        <About />
+        <Typography variant='h5' color='primary'>Treatments</Typography>
+        <Treatments />
+        <Typography variant='h5' mt={5}color='primary'>Contact</Typography>
+        <Contact />
     </Container>
+    </ThemeProvider>
   )
 }
 
