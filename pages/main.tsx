@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import type { NextPage } from 'next'
 import { makeStyles } from '@mui//styles';
 import { ThemeProvider } from '@mui/material/styles';
@@ -7,6 +7,7 @@ import { Box, Container, Typography } from '@mui/material';
 import { Header } from '../components/Header';
 import { About } from '../components/About';
 import { Treatments } from '../components/Treatments';
+import { Contact } from '../components/Contact'; 
 
 const useStyles = makeStyles({
   container: {
@@ -23,6 +24,8 @@ const Main: NextPage = () => {
           <About />
           <Typography variant='h5' color='primary'>Treatments</Typography>
           <Treatments />
+          <Typography variant='h5' mt={5}color='primary'>Contact</Typography>
+          <Contact />
       </Container>
     </ThemeProvider>
   )
