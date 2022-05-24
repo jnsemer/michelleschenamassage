@@ -46,17 +46,14 @@ export const Contact = () => {
           borderRadius:2, 
           boxShadow: 4
           }}>
-            <Box maxWidth='md' justifyContent='space-between' p={3} mt={{xs: 2, md:0}} id="contact">
+            <Box maxWidth='md' justifyContent='center' p={3} mt={{xs: 2, md:0}} id="contact">
               <Typography color='white' sx={{textAlign:'center'}}>
                 m.schena.massage@gmail.com
               </Typography>
               <Typography color='white' gutterBottom sx={{textAlign:'center'}}>
                 508-789-1033
               </Typography>
-              <Stack spacing={5} direction={{xs:'column', md:'row'}}>
                 <Redpoint />
-                <CrossFit />
-              </Stack>
             </Box>
         </Box>
       </Box>

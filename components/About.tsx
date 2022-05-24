@@ -4,7 +4,6 @@ import { about1, about2 } from '../data/about';
 import Image from 'next/image';
 
 const servingText1 = "Michelle acts as the resident massage therapist at "
-const servingText2 = " and "
 const servingText3 = " with the ability to to rejuvenate the body, help prevent injury, and relieve chronic pain. She believes massage is an integral part of health and longevity."
 
 const AboutBlurb = () => {
@@ -21,10 +20,6 @@ const AboutBlurb = () => {
       {servingText1}  
       <Link variant='body1' href="https://www.redpointpt.com/" color="#fff">
         Redpoint Physical Therapy
-      </Link>
-      {servingText2}
-      <Link variant='body1' href="https://crossfit1620.com/" color="#fff">
-      CrossFit 1620
       </Link>
     </Typography>
     </>
