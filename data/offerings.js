@@ -12,12 +12,6 @@ export const offerings = [
     time: '90 Minutes'
   },
   {
-    title: '60 Minute Orthopedic Treatment',
-    desc: 'Orthopedic massage is a type of injury rehabilitation that focuses on assessment and a wide variety of modalities to treat the muscles and soft tissues surrounding joints. The aim of orthopedic massage is to improve pain, restore range of motion and promote balance.',
-    cost: 120,
-    time: '1 Hour'
-  },
-  {
     title: 'Active Assisted Stretching of the Lower Body', 
     desc: 'Active Assisted Stretching (AAS) is a targeted stretching technique used to isolate specific parts of each muscle. Flexibility without strength and strength without flexibility are both inefficient and increase the vulnerability to injury and dysfunction. AAS done consistently not only stretches the muscle but strengthens tendons and ligaments and increases range of motion.',
     cost: 85,
