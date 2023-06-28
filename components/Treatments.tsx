@@ -14,7 +14,7 @@ export const Treatments = () => {
           {...({ timeout: 1000 *(i+1) } )}
           key={offering.title}
         >
-          <Grid item xs={12} md={3} display='flex'>
+          <Grid item xs={12} md={4} display='flex'>
             <ServiceCard title={offering.title} description={offering.desc} cost={offering.cost} time={offering.time}/>
           </Grid>
         </Grow>
